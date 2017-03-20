@@ -1,4 +1,5 @@
 require "blasphemy_filter/version"
+require "blasphemy_filter/base"
 
 module BlasphemyFilter
   def check(text = "")

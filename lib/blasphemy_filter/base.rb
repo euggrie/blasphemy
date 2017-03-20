@@ -1,10 +1,12 @@
+require 'yaml'
+
 module BlasphemyFilter
   class Base
     def blasphemy?(text:, language:)
       profane = false
       dictionary.each do |rude_word|
-        if rude_word.match(example_text.downcase)
-          profrane = true
+        unless Regexp.new(rude_word).match(example_text.downcase).nil?
+          profane = true
           break
         end
       end
@@ -22,7 +24,7 @@ module BlasphemyFilter
     end
 
     def dictionary_file
-      File.join(File.dirname(__FILE__), '../config/dictionary.yml')
+      File.join(File.dirname(__FILE__), '../../config/en_base.yml')
     end
   end
 end
