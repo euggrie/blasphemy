@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Neo Sepulveda"]
   spec.email         = ["israel.sepulveda.castillejo@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{blasphemy_filter will check/remove profanity from your strings }
+  spec.description   = %q{blasphemy_filter will check/remove profanity and rude words from your strings. It supports multiple languages. Any help for the community is very well welcome!}
+  spec.homepage      = "http://github.com/neosepulveda/blasphemy_filter"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
